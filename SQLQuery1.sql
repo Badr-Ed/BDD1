@@ -1,4 +1,4 @@
-/* Part 1
+/* Part 1 */
 CREATE TABLE NOMS(
 ID INTEGER PRIMARY KEY,
 noms TEXT NOT NULL
@@ -14,8 +14,8 @@ VALUES
 	(4, 'Frank');
 
 	SELECT * FROM NOMS
-*/
-/* Part 2
+
+/* Part 2 * /
 
 CREATE TABLE Entraineur(
 ID INTEGER PRIMARY KEY,
@@ -30,5 +30,5 @@ VALUES
 	(3, 'Elisabeth','Hockey'),
 	(4, 'Frank','Swimming');
 
-	SELECT * FROM Entraineur */
+	SELECT * FROM Entraineur
 
