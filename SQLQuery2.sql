@@ -75,7 +75,16 @@ Prod_ID INT FOREIGN KEY REFERENCES PRODUITS(ID),
 QTY INT
 );
 
-INSERT INTO  invent(ID , Prod_ID, QTY)
+INSERT INTO  invent(Prod_ID, QTY)
+VALUES
+	(101,10),
+	(102,20),
+	(103,30),
+	(104,30),
+	(105,30),
+	(106,30),
+	(107,30),
+	(108,30);
 
 
 	SELECT * FROM invent;
