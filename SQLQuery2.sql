@@ -2,6 +2,8 @@
 USE bdd1;
 Go
 */
+
+
 /*Table client*/
 CREATE TABLE CLIENT(
 ID INTEGER PRIMARY KEY,
@@ -25,10 +27,10 @@ cmd_No INTEGER PRIMARY KEY,
 cmd_Date DATE,
 client INT FOREIGN KEY REFERENCES CLIENT(ID),
 QTY INT,
-Prod_ID INT FOREIGN KEY REFERENCES PRODUITS(ID)
+Prod_ID INT FOREIGN KEY REFERENCES PRODUITS(ID),
 );
 
-/*Update the from ProdID to Prod_ID column
+/*Update the column name from ProdID to Prod_ID column
 EXEC sp_rename 'commandes.ProdID','Prod_ID', 'COLUMN'; */
 
 INSERT INTO  commandes (cmd_No, cmd_Date, client, QTY, Prod_ID)
@@ -41,7 +43,6 @@ VALUES
 	SELECT * FROM commandes;
 
 /*Table Produits*/
-
 CREATE TABLE PRODUITS(
 ID INTEGER PRIMARY KEY,
 Nom VARCHAR(60),
