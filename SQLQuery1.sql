@@ -15,7 +15,7 @@ VALUES
 
 	SELECT * FROM NOMS
 
-/* Part 2 * /
+/* Part 2 */
 
 CREATE TABLE Entraineur(
 ID INTEGER PRIMARY KEY,
